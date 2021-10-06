@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 interface PostsFormProps {}
 
 const PostsForm: FC<PostsFormProps> = () => {
+  const [title, setTitle] = useState<string>("");
   const submitHandler = (event: any) => {
     event.preventDefault();
   };
