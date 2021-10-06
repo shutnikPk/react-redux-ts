@@ -5,7 +5,8 @@ interface FetchedPostsProps {
 }
 
 const FetchedPosts: FC<FetchedPostsProps> = ({ posts }) => {
-  if (!posts.length) return <p className="text-center">Постов пока нет</p>;
+  if (!posts.length)
+    return <button className="btn btn-primary">Загрузить посты</button>;
   return <></>;
 };
 
